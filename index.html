@@ -236,7 +236,7 @@ a.applink:hover{color:#555;border-bottom-color:#555}
 설계도 쪽(미래처치 비교군 설계): <kbd>→</kbd> 또는 그림 클릭으로 그림 6단계를 차례로, 위 단추로 바로 이동(6단계 뒤 <kbd>→</kbd>는 다음 쪽)<br>
 <kbd>G</kbd>: 대화형 그림 ↔ 원래 그림 · 그림 위에 마우스: 계수와 95% 신뢰구간<br>
 회색 '(부록)'을 누르면 부록 쪽이 창으로 열림(<kbd>Esc</kbd> 닫기)<br>
-휴대폰·태블릿: 왼쪽으로 밀거나 화면 오른쪽을 누르면 다음 쪽, 오른쪽으로 밀거나 화면 왼쪽(3분의 1)을 누르면 앞쪽<br>
+휴대폰·태블릿: 오른쪽으로 밀면 앞쪽, 왼쪽으로 밀면 다음 쪽. 그래프 밖을 누르면 화면 왼쪽 3분의 1은 앞쪽, 나머지는 다음 쪽(그래프를 누르면 값 표시)<br>
 <kbd>?</kbd>: 이 도움말
 </div></div>
 <script>
@@ -684,7 +684,7 @@ document.addEventListener('click',e=>{
 // 시작
 slides[0].classList.add('on');show(0,1);
 const coarse=matchMedia('(hover: none) and (pointer: coarse)').matches;
-setTimeout(()=>coarse?showHud('밀거나 눌러서 넘기기 · 화면 왼쪽을 누르면 앞쪽',3500):showHud('?: 조작 도움말 · O: 전체 보기'),400);
+setTimeout(()=>coarse?showHud('오른쪽으로 밀면 앞쪽 · 왼쪽으로 밀면 다음 쪽',3500):showHud('?: 조작 도움말 · O: 전체 보기'),400);
 })();
 </script>
 </body>
